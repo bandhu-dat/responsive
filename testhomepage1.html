@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+
+            body {
+                background-color: activecaption;
+            }
+            p{
+                margin-left: 800px;
+                letter-spacing: 0.5px;
+
+
+            }
+             p.ea
+             {
+                margin-left: 100px;
+                
+
+
+            }
+            p.ex{
+
+                margin-left: 10px;
+                background-color: yellowgreen;
+                margin-right: 10px;
+
+            }
+            p.ey{
+
+                margin-left: 10px;
+                margin-right: 10px;
+
+            }
+            p.ez{
+
+                margin-left: 40px;
+                margin-right: 10px;
+
+            }
+            div.ex{
+                background-color: white;
+            }
+
+            div.ey{
+                background-color: yellowgreen;
+                 
+                padding-right: 200px ;
+                height: 110px;
+            }
+             div.eq{
+                background-color: white;
+
+                padding-left: : 150px ;
+                
+            }
+
+
+            p.ef{
+
+                background-color: buttonface;
+                   height: 110px ;
+
+            }
+
+            p.ea{
+                alignment-adjust: central;
+            }
+            
+            P.ed{
+                margin-left: 400px;
+                letter-spacing: 0.5px;
+                
+            }
+            
+            /* jssor slider bullet navigator skin 05 css */
+        /*
+        .jssorb05 div           (normal)
+        .jssorb05 div:hover     (normal mouseover)
+        .jssorb05 .av           (active)
+        .jssorb05 .av:hover     (active mouseover)
+        .jssorb05 .dn           (mousedown)
+        */
+        .jssorb05 {
+            position: absolute;
+        }
+        .jssorb05 div, .jssorb05 div:hover, .jssorb05 .av {
+            position: absolute;
+            /* size of bullet elment */
+            width: 16px;
+            height: 16px;
+            background: url('img/b05.png') no-repeat;
+            overflow: hidden;
+            cursor: pointer;
+        }
+        .jssorb05 div { background-position: -7px -7px; }
+        .jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+        .jssorb05 .av { background-position: -67px -7px; }
+        .jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+
+        /* jssor slider arrow navigator skin 12 css */
+        /*
+        .jssora12l                  (normal)
+        .jssora12r                  (normal)
+        .jssora12l:hover            (normal mouseover)
+        .jssora12r:hover            (normal mouseover)
+        .jssora12l.jssora12ldn      (mousedown)
+        .jssora12r.jssora12rdn      (mousedown)
+        */
+        .jssora12l, .jssora12r {
+            display: block;
+            position: absolute;
+            /* size of arrow element */
+            width: 30px;
+            height: 46px;
+            cursor: pointer;
+            background: url('img/a12.png') no-repeat;
+            overflow: hidden;
+        }
+        .jssora12l { background-position: -16px -37px; }
+        .jssora12r { background-position: -75px -37px; }
+        .jssora12l:hover { background-position: -136px -37px; }
+        .jssora12r:hover { background-position: -195px -37px; }
+        .jssora12l.jssora12ldn { background-position: -256px -37px; }
+        .jssora12r.jssora12rdn { background-position: -315px -37px; }
+        </style>
+         <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+          <script type="text/javascript" src="js/jssor.slider.mini.js"></script>
+          <script>
+        jQuery(document).ready(function ($) {
+            
+            var jssor_1_SlideshowTransitions = [
+              {$Duration:1200,$Opacity:2}
+            ];
+            
+            var jssor_1_options = {
+              $AutoPlay: true,
+              $SlideshowOptions: {
+                $Class: $JssorSlideshowRunner$,
+                $Transitions: jssor_1_SlideshowTransitions,
+                $TransitionsOrder: 1
+              },
+              $ArrowNavigatorOptions: {
+                $Class: $JssorArrowNavigator$
+              },
+              $BulletNavigatorOptions: {
+                $Class: $JssorBulletNavigator$
+              }
+            };
+            
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+            
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizing
+            function ScaleSlider() {
+                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
+                if (refSize) {
+                    refSize = Math.min(refSize, 600);
+                    jssor_1_slider.$ScaleWidth(refSize);
+                }
+                else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+            ScaleSlider();
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+        
+    </head>
+    <body>
+        <div style="background-color:black; color:white; padding:2px;">
+            <img src="logo.png" alt="Mountain View" style="width:200px;height:70px;">
+            <p>HOME&nbsp;&nbsp;&nbsp;REGISTRATION&nbsp;&nbsp;&nbsp;STORE&nbsp;&nbsp;&nbsp;CONTACTUS</p>
+        </div>
+        <div class="ey">
+            <p class="ef">
+                <font size="4">
+                GOOGLE WEB HOSTING
+                           </p>
+        </div>
+        <div align="center"><p class="ex"> <font size="8">metamorph_miresa</font><br><font size="6">HOME&nbsp;&nbsp;&nbsp;REGISTRATION&nbsp;&nbsp;&nbsp;STORE&nbsp;&nbsp;&nbsp;CONTACT US<font></p> 
+        </div>s
+        <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+        <!-- Loading Screen -->
+        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
+            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+        </div>
+        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/02.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/04.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/05.jpg" />
+            </div>
+            <div data-p="112.50" style="display: none;">
+                <img data-u="image" src="img/09.jpg" />
+            </div>
+        </div>
+        <!-- Bullet Navigator -->
+        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;" data-autocenter="1">
+            <!-- bullet navigator item prototype -->
+            <div data-u="prototype" style="width:16px;height:16px;"></div>
+        </div>
+        <!-- Arrow Navigator -->
+        <span data-u="arrowleft" class="jssora12l" style="top:0px;left:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <span data-u="arrowright" class="jssora12r" style="top:0px;right:0px;width:30px;height:46px;" data-autocenter="2"></span>
+        <a href="http://www.jssor.com" style="display:none">Slideshow Maker</a>
+    </div>
+        <div class="ex">
+
+            <table align="center" style="width:90%">
+                <tr>
+                    <td><img src="home_icon1.png" style="width:50px;">Business information<p class="ez"><font size="3">Lorem ipsum dolor sit amet,<br> consec tetuer adipi<br> scing. Praesent vestibu<br> lum molestie</font></p></td>
+                    <td><img src="home_icon2.png" style="width:50px;">Diller Details<p class="ez"><font size="3">Consec tetuer adipi scing.,<br> Praesent vestibu lum <br> molestie. lacuiirhs. <br> Aenean non ummy.</font></p></td>		
+                    <td><img src="home_icon3.png" style="width:50px;">Distribution Point<p class="ez"><font size="3">Praesent vestibu lum ,<br> molestie acuiirhs. Aenean <br> non ummy hendreriauris<br> Phasellllus.</font></p></td>
+                    <td><img src="home_icon4.png" style="width:50px;">Business option<p class="ez"><font size="3">Aenean non ummy ,<br> hendreriau ris. Phasellllus <br> porta. Fusce suscipit <br> varius mium sociis.</font></p></td>
+                </tr>
+
+            </table>
+            <table align="center" style="width:100%">
+                <tr align="center" >
+                    
+                    <td><u>STORE VIEW FOR CUSTOMER</u>  </td>		
+                    
+                </tr>
+            </table>
+        </table>
+        <p class ="ea">       
+        <div class="eq">
+        
+    <table align="center" style="width:100%">    
+        <tr>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage1.jpg"  width="300" height="200">
+                </a></td>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage2.jpg"  width="300" height="200">
+                </a></td>		
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage3.jpg"  width="300" height="200">
+                </a></td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage4.jpg"  width="300" height="200">
+                </a></td>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage5.jpg"  width="300" height="200">
+                </a></td>		
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage6.jpg"  width="300" height="200">
+                </a></td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage7.jpg"  width="300" height="200">
+                </a></td>
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimage8.jpg"  width="300" height="200">
+                </a></td>		
+            <td><a href="http://localhost/bandhu/carregistration.html">
+                    <img src="carimgae9.jpg"  width="300" height="200">
+                </a></td>
+        </tr>
+    </table>
+        </p> 
+        
+        <table align="center"style="width:80%">
+            <tr align="left">
+                <td><input type="submit"name="READ MORE"value="READ MORE"></td>
+                <td><input type="submit"name="READ MORE"value="READ MORE"></td>		
+                <td><input type="submit"name="READ MORE"value="READ MORE"></td>
+            </tr>
+        </table>
+            
+        <p class ="ed"><u>
+            <font size="3">
+            CONTACT US FOR ANY QUARY
+            </font></u>
+        </p>
+            <table align="center" style="width:70%">
+                
+                <tr>
+                    
+                    <td><font size="2"><u>FOR SALSE</u></font> </td>		
+                    <td><font size="2">19  BANDRA,MUMBAI,
+                PHONE NO. 24252242<br>
+                MAIL ID:salse@gmail.com<font></td>
+                </tr>
+                <tr>
+                    <td><font size="2"><u>FOR DILLERSHIP</u></font> </td>		
+                    <td><font size="2">19  BANDRA,MUMBAI,
+                PHONE NO. 24252242<br>
+                MAIL ID:salse@gmail.com<font></td>
+                </tr>
+            </table>
+
+         
+        </div>
+    </div>
+
+   
+</body>
+</html>
